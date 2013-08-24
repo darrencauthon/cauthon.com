@@ -11,7 +11,7 @@
 		<meta name=robots content="index, follow">
 		
 		<!-- Main Styles -->
-		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen"> 
+		<link href="css/style-ipad.css" type="text/css" rel="stylesheet" media="screen"> 
 		
 		<!-- Jquery Library -->
 		<script src="scripts/jquery-2.0.0.js" ></script>
@@ -55,7 +55,7 @@
 		<script src="scripts/antiscroll.js"></script>		
 
 		<!-- Hover Animation in Navi and Contact -->
-		<script type="text/javascript" src="scripts/hoverAnimations.js"></script>
+		<script type="text/javascript" src="scripts/hoverAnimationsIpad.js"></script>
 		
 		<!-- Style Switcher -->
 		<link type="text/css" rel="stylesheet" id="theme" href="css/theme1.css" media="screen" />					
@@ -90,15 +90,46 @@
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="scripts/custom.js"></script>
 
-		<link href="css/theme1.css" type="text/css" rel="stylesheet" media="screen">
-		<link href="css/theme9.css" type="text/css" rel="stylesheet" media="screen"> -->
+
+		<!--=========================================================================================================
+				!!!! If you want to have other Style, please delete "--> <!--" in the line of prefered CSS !!!!
+				!!!! And Delete the Container "style-switcher" from Line 119 to 198. This Container ist only
+					 for using the different Styles.
+		==========================================================================================================-->	
+		
+								<!-- The Main Styles -->
+	<!--	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen">  -->	    <!-- Red Style "First" 	-->			
+	<!--	<link href="css/theme2.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Light Blue  		-->
+	<!--	<link href="css/theme3.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Dark Orange 		-->
+	<!--	<link href="css/theme4.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Dark Beige  		-->
+	<!--	<link href="css/theme5.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Dark Blue  		-->
+	<!--	<link href="css/theme6.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Dark Pink  		-->
+	<!--	<link href="css/theme7.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Dark Green  		-->
+	<!--	<link href="css/theme8.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Dark Tyrkis  		-->
+	<!--	<link href="css/theme9.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Dark Brown  		-->
+	<!--	<link href="css/theme10.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Orange		  		-->
+	
+								<!-- The Background Colors -->
+	<!--	<link href="css/theme11.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Background 1  		-->
+	<!--	<link href="css/theme12.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Background 2  		-->
+	<!--	<link href="css/theme13.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Background 3  		-->
+	<!--	<link href="css/theme14.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Background 4  		-->
+	<!--	<link href="css/theme15.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Background 5  		-->
+	<!--	<link href="css/theme16.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Background 6  		-->
+	<!--	<link href="css/theme17.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Background 7  		-->
+	<!--	<link href="css/theme18.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Background 8  		-->
+	<!--	<link href="css/theme19.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Background 9  		-->
+	<!--	<link href="css/theme20.css" type="text/css" rel="stylesheet" media="screen"> -->		<!-- Background 10 		-->
 	
 								<!-- The Background Patterns -->
 		<!-- To change the patterns: Please open the File: selector_pattern.js in the Script Directory
 		On line 3 all patterns are listet. Delete all Files and keep only your pattern.
 		var myColors2 = 'url(images/pattern/pattern1.png), ...										-->
+
+		<!-- Winload Functions -->
+		<script type="text/javascript" src="scripts/loader-ipad.js"></script> 
 		
-		<!-- Twitter Feed ASP1-->
+		<!-- Twitter Feed ASP1 -->
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
 	
 
@@ -122,15 +153,97 @@
 		}
 		</script>
 		<!-- end Twitter -->
-
-		<!-- Winload Functions -->
-		<script type="text/javascript" src="scripts/loader-pc.js"></script>
 		
-		<!--<script>alert('test');</script>-->
 	</head>	
 	
 	<body >	
 	<div id="bWin"></div>
+		<!--=========================================================================================================
+												S T Y L E   S E L E C T O R
+				To Delete Style Box please delete this div Container: id=css-switch Line 139 to 217 
+		==========================================================================================================-->	
+		<div id="style-switcher" >
+			
+			<div id="switcher-content" >
+				<div id="switcher">
+					<div id="switcher-device">
+						<p>DEVICE</p>
+						<div class="line-200">
+							<div class="line-1" ></div>
+							<div class="deg-130" ></div>
+							<div class="deg-50" ></div>
+							<div class="line-2" ></div>
+						</div>
+						<div class="switcher-link" >
+							<a href="index.html" target="_parent" ><i class="icon-desktop icon-3x" ></i></a>
+							<a href="mobil.html" target="_parent" ><i class="icon-mobile-phone icon-3x"></i></a>
+							<i class="icon-tablet icon-3x"></i>
+						</div>
+					</div>
+					<div class="switcher-style" >
+						<p>STYLE</p>
+						<div class="line-200" >
+							<div class="line-1" ></div>
+							<div class="deg-130" ></div>
+							<div class="deg-50" ></div>
+							<div class="line-2" ></div>
+						</div>
+						<div class="styles-switch" >
+							<a href="" title="switch styling" id="theme1"><span class="styling style-red" ></span></a>  
+							<a href="" title="switch styling" id="theme2"><span class="styling style-light" ></span></a>  
+							<a href="" title="switch styling" id="theme3"><span class="styling style-orange" ></span></a> 
+							<a href="" title="switch styling" id="theme4"><span class="styling style-beige" ></span></a>
+							<a href="" title="switch styling" id="theme5"><span class="styling style-blue" ></span></a>
+							<a href="" title="switch styling" id="theme6"><span class="styling style-pink" ></span></a>  
+							<a href="" title="switch styling" id="theme7"><span class="styling style-green" ></span></a>  
+							<a href="" title="switch styling" id="theme8"><span class="styling style-cyan" ></span></a> 
+							<a href="" title="switch styling" id="theme9"><span class="styling style-brown" ></span></a>
+							<a href="" title="switch styling" id="theme10"><span class="styling style-orange2" ></span></a>
+						</div>
+					</div>	
+					<div class="switcher-style" >
+						<p>BACKGROUND</p>
+						<div class="line-200" >
+							<div class="line-1" ></div>
+							<div class="deg-130" ></div>
+							<div class="deg-50" ></div>
+							<div class="line-2" ></div>
+						</div>
+						<div class="styles-switch">
+							<div id="colors">
+								<div id="colorBox"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="switcher-style" >
+						<p>PATTERN</p>
+						<div class="line-200" >
+							<div class="line-1" ></div>
+							<div class="deg-130" ></div>
+							<div class="deg-50" ></div>
+							<div class="line-2" ></div>
+						</div>
+						<div class="styles-switch">
+							<div id="colors2">
+								<div id="colorBox2"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div id="right-border" ></div>
+				<div id="right-button" >
+					<i class="icon-angle-right icon-3x"></i>
+					<div id="right-button-rotate">
+						<div class="line-120" >
+							<div class="deg-130" ></div>
+							<div class="deg-50" ></div>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>	
+
 		<div id="wrapper" >
 		
 			<!-- Little Header -->
@@ -276,10 +389,10 @@
 							<div class="live-tile" id="socials" data-mode="flip"  data-delay="3000" data-direction="vertical" data-pause-onhover="true" >
 								<div id="social-inner" >
 									<div id="social-header" >
-										<a href="https://plus.google.com/101398632683411111544/about" onfocus="this.blur()" ><i class="icon-google-plus-sign icon-3x"></i></a>
-										<a href="http://www.linkedin.com/profile/view?id=26703230" onfocus="this.blur()" ><i class="icon-linkedin-sign icon-3x"></i></a>
-										<a href="https://twitter.com/darrencauthon" onfocus="this.blur()" ><i class="icon-twitter-sign icon-3x"></i></a>
-										<a href="https://www.facebook.com/darrencauthon" onfocus="this.blur()" ><i class="icon-facebook-sign icon-3x"></i></a>
+										<a href="https://plus.google.com/" onfocus="this.blur()" ><i class="icon-google-plus-sign icon-3x"></i></a>
+										<a href="http://de.linkedin.com/" onfocus="this.blur()" ><i class="icon-linkedin-sign icon-3x"></i></a>
+										<a href="https://twitter.com/" onfocus="this.blur()" ><i class="icon-twitter-sign icon-3x"></i></a>
+										<a href="https://www.facebook.com/" onfocus="this.blur()" ><i class="icon-facebook-sign icon-3x"></i></a>
 									</div>
 									<div id="social-footer">
 										<br/>&copy; 2013 andersdenkend, All rights reserved
@@ -312,7 +425,7 @@
 									<h1 class="pcblock" >WORK EXPERIENCE</h1>
 									<div class="block">
 										<h5>SINCE 2011</h5>
-										<div class="line-366" >
+										<div class="line-200" >
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -324,7 +437,7 @@
 									</div>
 									<div class="block">
 										<h5>2008 - 2011</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -336,7 +449,7 @@
 									</div>
 									<div class="block">
 										<h5>2006 - 2008</h5>
-										<div class="line-366" >
+										<div class="line-200" >
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -350,7 +463,7 @@
 									<h1 class="pcblock" >EDUCATION</h1>
 									<div class="block">
 										<h5>SINCE 2011</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -362,7 +475,7 @@
 									</div>
 									<div class="block">
 										<h5>2008 - 2011</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -374,7 +487,7 @@
 									</div>
 									<div class="block">
 										<h5>2006 - 2008</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -388,7 +501,7 @@
 									<h1 class="pcblock" >TESTIMONIAL</h1>
 									<div class="block-3">
 										<h5>GETTY IMAGES INC.</h5>
-										<div class="line-366" >
+										<div class="line-200" >
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -400,7 +513,7 @@
 									</div>
 									<div class="block-3">
 										<h5>FOSTERS &amp; PARTNERS</h5>
-										<div class="line-366" >
+										<div class="line-200" >
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -446,36 +559,30 @@
 							<div class="tiles">
 								<div class="live-tile" data-mode="flip" data-delay="10000" data-direction="vertical">
 									<div class="chart-dark">
-										<div class="percentage-black" data-percent="100"><span>100</span>%</div>
-										<div class="label label-ipad">PHOTOSOP</div>
+										<div class="percentage-black" data-percent="100"><span>PHOTOSOP</span></div>
 									</div>
 									<div class="chart-light">
-										<div class="percentage-white" data-percent="100"><span>100</span>%</div>
-										<div class="label">HTML5/CSS3</div>
+										<div class="percentage-white" data-percent="100"><span>HTML5/CSS3</span></div>
 									</div>
 								</div>
 							</div>
 							<div class="tiles">
 								<div class="live-tile" data-mode="flip" data-delay="10000" data-direction="horizontal">
 									<div class="chart-light">
-										<div class="percentage-white" data-percent="80"><span>80</span>%</div>
-										<div class="label">ILLUSTRATOR</div>
+										<div class="percentage-white" data-percent="80"><span>ILLUSTRATOR</span></div>
 									</div>	
 									<div class="chart-dark">
-										<div class="percentage-black" data-percent="90"><span>90</span>%</div>
-										<div class="label">JAVASCRIPT</div>
+										<div class="percentage-black" data-percent="90"><span>JAVASCRIPT</span></div>
 									</div>
 								</div>
 							</div>	
 							<div class="tiles">
 								<div class="live-tile" data-mode="flip" data-delay="10000" data-direction="horizontal">
 									<div class="chart-light">
-										<div class="percentage-white" data-percent="90"><span>90</span>%</div>
-										<div class="label">INDESIGN</div>
+										<div class="percentage-white" data-percent="90"><span>INDESIGN</span></div>
 									</div>
 									<div class="chart-dark">
-										<div class="percentage-black" data-percent="80"><span>80</span>%</div>
-										<div class="label">PHP</div>
+										<div class="percentage-black" data-percent="80"><span>PHP</span></div>
 									</div>
 								</div>
 							</div>			
@@ -483,12 +590,10 @@
 							<div class="tiles">
 								<div class="live-tile" data-mode="flip" data-delay="10000" data-direction="vertical">
 									<div class="chart-dark">
-										<div class="percentage-black" data-percent="70"><span>70</span>%</div>
-										<div class="label">ANALOG</div>
+										<div class="percentage-black" data-percent="70"><span>ANALOG</span></div>
 									</div>
 									<div class="chart-light">
-										<div class="percentage-white" data-percent="60"><span>60</span>%</div>
-										<div class="label">WORDPRESS</div>
+										<div class="percentage-white" data-percent="60"><span>WORDPRESS</span></div>
 									</div>
 								</div>
 							</div>	
@@ -554,7 +659,7 @@
 						===============================-->
 						<div id="contact">
 							<i class="icon-envelope-alt icon-2x"></i>
-							<div class="line-366" >
+							<div class="line-200" >
 								<div class="line-1"></div>
 								<div class="deg-130"></div>
 								<div class="deg-50"></div>
@@ -563,7 +668,7 @@
 							<h1><a href="mailto:johana.stark@yourdomain.com" >JOHANA.STARK@YOURDOMAIN.COM</a></h1>
 							<div id="contact-footer">
 								<i class="icon-phone icon-2x" ></i>
-								<div class="line-366" >
+								<div class="line-200" >
 									<div class="line-1"></div>
 									<div class="deg-130"></div>
 									<div class="deg-50"></div>
@@ -580,15 +685,15 @@
 						<!-- Please insert your Twitter ID in Line 698 " data-widget-id='your ID' " -->
 						<div id="feed">
 							<i class="icon-twitter icon-2x" ></i>
-							<div class="line-366" >
+							<div class="line-200" >
 								<div class="line-1"></div>
 								<div class="deg-130"></div>
 								<div class="deg-50"></div>
 								<div class="line-2"></div>
 							</div>
 							<div class="tweet-box"> 
-								<div class="box-wrap antiscroll-wrap" >
-									<div class="antiscroll-inner" > 
+								<div class="box-wrap antiscroll-wrap">
+									<div class="antiscroll-inner"> 
 										<a class="twitter-timeline" href="https://twitter.com/twitterapi" data-widget-id="344795593878679555" data-chrome="nofooter, noheader transparent" data-tweet-limit="6" data-link-color="#000" data-theme="dark"  data-border-color="#000" data-show-replies="true" data-aria-polite="assertive">
 											Tweets by @twitterapi
 										</a>	
@@ -1024,7 +1129,7 @@
 									<h1>LATEST ENTRYS</h1>
 									<div class="block">
 										<h5>03 MARCH 2013</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -1040,7 +1145,7 @@
 									</div>
 									<div class="block">
 										<h5>13 FEBRUARY 2013</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -1055,7 +1160,7 @@
 									</div>
 									<div class="block">
 										<h5>22 DECEMBER 2012</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -1128,7 +1233,7 @@
 									<img src="images/blog/entry1_img1.jpg" width="400" height="200" alt="">
 									<div class="block">
 										<h5>03 MARCH 2013</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -1146,7 +1251,7 @@
 									<div class="block-2" >
 										<div class="head-right-blog">
 											<i class="icon-comments" ></i>
-											<div class="line-366" >
+											<div class="line-200" >
 												<div class="line-1"></div>
 												<div class="deg-130"></div>
 												<div class="deg-50"></div>
@@ -1223,7 +1328,7 @@
 									
 									<div class="footer-blog" >
 										<h5>LEAVE A COMMENT</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -1234,7 +1339,7 @@
 											<input class="cemail input-email" type="email" name="email" placeholder="EMAIL" required>
 											<input class="cweb input-url" type="url" name="url" placeholder="WEBSITE" required>
 											<textarea class="ccomment area-field" name="comment"  required></textarea>
-											<div class="line-366" >
+											<div class="line-200" >
 												<div class="line-1"></div>
 												<div class="deg-130"></div>
 												<div class="deg-50"></div>
@@ -1257,7 +1362,7 @@
 								<div class="inner-text" >
 									<div class="block">
 										<h5>13 FEBRUARY 2013</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -1275,7 +1380,7 @@
 									<div class="block-2" >
 										<div class="head-right-blog">
 											<i class="icon-comments" ></i>
-											<div class="line-366" >
+											<div class="line-200" >
 												<div class="line-1"></div>
 												<div class="deg-130"></div>
 												<div class="deg-50"></div>
@@ -1352,7 +1457,7 @@
 									
 									<div class="footer-blog" >
 										<h5>LEAVE A COMMENT</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -1363,7 +1468,7 @@
 											<input class="cemail input-email" type="email" name="email" placeholder="EMAIL" required>
 											<input class="cweb input-url" type="url" name="url" placeholder="WEBSITE" required>
 											<textarea class="ccomment area-field" name="comment"  required></textarea>
-											<div class="line-366" >
+											<div class="line-200" >
 												<div class="line-1"></div>
 												<div class="deg-130"></div>
 												<div class="deg-50"></div>
@@ -1387,7 +1492,7 @@
 									<img src="images/blog/entry2_img1.jpg" width="400" height="225" alt="">
 									<div class="block">
 										<h5>22 DECEMBER 2012</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -1404,7 +1509,7 @@
 									<div class="block-2" >
 										<div class="head-right-blog">
 											<i class="icon-comments" ></i>
-											<div class="line-366" >
+											<div class="line-200" >
 												<div class="line-1"></div>
 												<div class="deg-130"></div>
 												<div class="deg-50"></div>
@@ -1481,7 +1586,7 @@
 									
 									<div class="footer-blog" >
 										<h5>LEAVE A COMMENT</h5>
-										<div class="line-366">
+										<div class="line-200">
 											<div class="line-1"></div>
 											<div class="deg-130"></div>
 											<div class="deg-50"></div>
@@ -1492,7 +1597,7 @@
 											<input class="cemail input-email" type="email" name="email" placeholder="EMAIL" required>
 											<input class="cweb input-url" type="url" name="url" placeholder="WEBSITE" required>
 											<textarea class="ccomment area-field" name="comment"  required></textarea>
-											<div class="line-366" >
+											<div class="line-200" >
 												<div class="line-1"></div>
 												<div class="deg-130"></div>
 												<div class="deg-50"></div>
@@ -1510,6 +1615,45 @@
 			</section> 
 
 		</div>
+		
+		
+		<script>
+						if((navigator.userAgent.match(/iPad/i))) 			{  
+							
+							
+							var scriptElem = document.createElement('script');
+								scriptElem.type = 'text/javascript';
+								scriptElem.src = 'scripts/hoverAnimationsIpad.js';
+
+							
+							var head = document.getElementsByTagName('head')[0];
+							if( head ) head.appendChild( scriptElem );
+
+							//----------------------------------------------------
+
+							var scriptElement = document.createElement( "script" );
+							scriptElement.setAttribute( "src", "test.js" );
+							document.body.appendChild( scriptElement );
+							
+							
+							var cssLocation = "css/style-ipad.css";
+							function getCss(){
+							  // CSS für IEs nachladen
+							  if(document.createStyleSheet) document.createStyleSheet(cssLocation);
+								// CSS für Mozilla, Netscape, Opera nachladen
+							  else{
+								var objStyle = document.createElement("style");
+								var objText = document.createTextNode("@import url("+cssLocation+") screen;");
+								objStyle.appendChild(objText);
+								document.getElementsByTagName("head")[0].appendChild(objStyle);
+							  }
+							}
+							 
+							window.onload=getCss;
+				} 
+
+
+	</script>
 		
 		<!--=========================================================================================================
 									STYLE SELECTOR BACKGROUND AND PATTERN SCRIPT
