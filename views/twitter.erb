@@ -1,0 +1,24 @@
+<!-- Twitter Feed ASP1-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+
+
+
+<!-- Twitter Embedded Timeline -->
+<script type="text/javascript">
+var frameListener;
+$(window).load(function () {
+  frameListener = setInterval("frameLoaded()", 50);
+});
+function frameLoaded() {
+  var frame = $('iframe').get(0);
+  if (frame != null) {
+    var frmHead = $(frame).contents().find('head');
+    if (frmHead != null) {
+      clearInterval(frameListener); // stop the listener
+      frmHead.append($('style, link[rel=stylesheet]').clone()); // clone existing css link
+      frmHead.append($("<link/>", { rel: "stylesheet", href: "css/mobile.css", type: "text/css" })); // or create css link yourself
+    }
+  }
+}
+</script>
+<!-- end Twitter -->
