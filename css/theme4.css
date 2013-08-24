@@ -1,0 +1,292 @@
+
+
+body									{ background-color:#d1cfc2; }
+
+#header								{ background-color:#a6372c; }			
+
+#header-explorer					{ background-color:#a6372c;	}							
+
+#style-switcher						{ left:-235px; }	
+
+#right-border						{ background-color:#a6372c; }	
+
+#right-button						{ background-color:#a6372c; }
+
+h2									{ color:#f7f7f7; }
+									
+
+
+/*--- Line 120px ---*/
+.line-120 .deg-130					{ background-color:#5c5c5a; }
+			
+.line-120 .deg-50					{ background-color:#5c5c5a; }
+
+.line-120 .line-1					{ background-color:#5c5c5a; }
+
+.line-120 .line-2					{ background-color:#5c5c5a; }				
+									
+.rotate-90							{color:#eae8db;	}
+									
+.rotate-90-2						{color:#bab3a9;	}
+									
+.rotate-90-3						{color:#eae8db;	}
+									
+.rotate-90-4						{color:#5c5c5a;	}	
+
+/*--- Line 120px ---*/
+#style-switcher	.line-120 .deg-130	{ background-color:white; }
+			
+#style-switcher	.line-120 .deg-50	{ background-color:white; }
+
+#style-switcher	.line-120 .line-1	{ background-color:white; }
+
+#style-switcher	.line-120 .line-2	{ background-color:white; }										
+
+/*--------------------------------- 
+			NAVI
+---------------------------------*/				
+#navi i								{ color:#5c5c5a; }	
+
+#nav-home i							{ color:#5c5c5a; }
+
+#nav-about i							{ color:#5c5c5a; }
+
+#nav-portfolio i						{ color:#5c5c5a; }
+
+#nav-blog i							{ color:#5c5c5a; }								
+
+									
+.icon-angle-down					{ color:4f5b6b; }					
+									
+	
+.nav-inner-home						{ background-color:#eae8db; }
+	
+.nav-inner-about					{ background-color:#bab3a9; }
+	
+.nav-inner-portfolio				{ background-color:#eae8db; }
+	
+.nav-inner-blog						{ background-color:#bab3a9; }
+/*end NAVI */
+
+/*--------------------------------- 
+			HOME
+---------------------------------*/		
+#content-left						{ color:#4f5b6b; }
+																	
+#content-left  p						{ font-weight:700; color:#5c5c5a; }					
+																	
+.navi-fashion						{ background-color:#eae8db; }							
+	
+.navi-people						{ background-color:#bab3a9; }
+									
+.navi-design						{ background-color:#eae8db; }
+									
+.navi-art							{ background-color:#908b81; }
+
+#vcard 								{ background-color:white; }								
+									
+#vcard h1							{ color:#908b81; }
+
+#vcard p								{ font-weight:100; color:#5c5c5a; }		
+						
+	
+.france								{ background-color:#bab3a9; }								
+	
+.japan								{ background-color:#eae8db; }						
+	
+.spane								{ background-color:#bab3a9; }		
+	
+.german								{ background-color:#908b81; }	
+
+.arab								{ background-color:#bab3a9; }	
+
+.english							{ background-color:#eae8db; }	
+
+.language							{ background-color:#bab3a9; }
+
+.sweden								{ background-color:#908b81; }
+/* end Home */
+
+/*--------------------------------- 
+			ABOUT ME
+---------------------------------*/	
+#about-me h4							{ color:#A6372C;}
+									
+#about-middle .box-1					{ background-color:#bab3a9;}	
+									
+#about-middle .box-2					{ background-color:#eae8db;}
+									
+#about-middle .rotate-90-2			{ color:#5c5c5a; }
+
+#about-middle
+.box-1 .rotate-90-4					{ color:#eae8db;  }
+#about-middle
+.box-1 .rotate-90-3					{ color:#eae8db;  }
+#about-middle
+.box-2 .rotate-90-2					{ color:#bab3a9;  }
+#about-middle
+.box-1 .navi-right .rotate-90-3		{ color:#eae8db;  } 
+									
+									
+.block-3 span						{ color:#4f5b6b; }					
+/* end ABOUT ME */									
+
+
+/*--------------------------------- 
+			PORTFOLIO
+---------------------------------*/		
+									
+#options							{ background-color:#bab3a9;}
+									
+#filter-left ul li a:hover				{ background-color:#eae8db; color:#bab3a9;}
+								
+#options  a							{ color:#eae8db; font-weight:700}
+									
+#footer-options						{ background-color:#eae8db;}			
+
+#portfolio									
+.dark								{ background-color:#908b81; }		
+
+#portfolio									
+.light								{ background-color:#eae8db; }		
+
+#portfolio									
+.normal								{ background-color:#bab3a9; }	
+
+#portfolio 
+.dark h3								{ color:#5c5c5a;}
+									
+									
+
+									
+#portfolio									
+.fancy-text-400 a					{ color:#5c5c5a;}
+									
+#portfolio
+.fancy-text-400 p					{ color:#5c5c5a;}
+									
+#portfolio									
+.fancy-text-200 a					{ color:#5c5c5a;}
+								
+#portfolio
+.fancy-text-200 p					{ color:#5c5c5a;}
+
+#portfolio 
+.orangedark a						{ color:#eae8db;}
+
+#portfolio 
+.orangedark p						{ color:#eae8db;}
+/* end PORTFOLIO */
+
+/*--------------------------------- 
+			  BLOG
+---------------------------------*/		
+									
+#left-blog							{ background-color:bab3a9; }
+
+#blog h4								{ color:#A6372C; }
+									
+#blog a								{ color:#A6372C; }
+
+#blog .master						{ color:#A6372C; }	
+									
+#blog-nav-header					{ background-color:#bab3a9; }
+									
+#filter-archives					{ background-color:#eae8db; }
+									
+#filter-archives .navi-left ul		{ color:#bab3a9; font-weight:700; }
+									
+#filter-categorie					{ background-color:#bab3a9; }
+									
+#filter-categorie .navi-left ul		{ color:#eae8db; font-weight:700; }
+									
+#right-blog							{ background-color:4f5b6b; }
+
+.block-2							{ background-color:#cbcbca; }
+
+#right-blog .blog-post-1  h3 			{ color:#2f3134; }
+
+#right-blog .blog-post-1  h5 			{ color:#f7f7f7; }
+									
+#right-blog .blog-post-1  h4 			{ color:#9a9b96; }		
+
+#right-blog .blog-post-1 
+.blog-post-text p			 		{ color:#2f3134; }		
+
+#filter-archives ul li:hover			{ background-color:#bab3a9; color:#eae8db; }	
+	
+#filter-categorie ul li:hover			{ background-color:#eae8db; color:#bab3a9; }	
+/* end BLOG */
+
+
+/*--------------------------------- 
+			MOBILE STYLES
+---------------------------------*/	
+/*--- Portfolio Mobil ---*/
+#portfolio-mobil									
+.dark								{ background-color:#908b81; }		
+
+#portfolio-mobil									
+.light								{ background-color:#eae8db; }		
+
+#portfolio-mobil								
+.normal								{ background-color:#bab3a9; }	
+
+#portfolio-mobile
+.dark h3								{ color:white; }
+										
+#portfolio-mobil									
+.fancy-text-400 a					{ color:white; }
+									
+#portfolio-mobil
+.fancy-text-400 p					{ color:white; }
+									
+#portfolio-mobil									
+.fancy-text-200 a					{ color:white; }
+								
+#portfolio-mobil
+.fancy-text-200 p					{ color:white; }
+
+#portfolio-mobil
+.orangedark a						{ color:#eae8db; }
+
+#portfolio-mobil
+.orangedark p						{ color:#eae8db; }
+
+#filters-mobile .filter-a, #filters-mobile .filter-c, #filters-mobile .filter-e		{ background-color:#eae8db; }		
+#filters-mobile .filter-b, #filters-mobile .filter-d, #filters-mobile .filter-f		{ background-color:#bab3a9; }		
+
+#filters-mobile .filter-a a, #filters-mobile .filter-c a, #filters-mobile .filter-e a	{ color:#bab3a9; }		
+#filters-mobile .filter-b a, #filters-mobile .filter-d a, #filters-mobile .filter-f a	{ color:#eae8db; }	
+
+#portfolio-mobil #options			{ background-color:white; }
+									
+#portfolio-mobil #filter-left ul li a:hover	{ background-color:#eae8db; color:white; }
+/* end MOBILE PORTFOLIO */
+
+/*--- MOBILE BLOG ---*/
+.open-button-latest					{ background-color:#eae8db; color:#bab3a9; }
+.open-button-archive				{ background-color:#bab3a9; color:#eae8db; }
+.open-button-categorie				{ background-color:#eae8db; color:#bab3a9; }
+
+
+.open-button-latest:hover			{ color:white; }
+.open-button-archive:hover			{ color:white; }
+.open-button-categorie:hover		{ color:white; }
+/*end MOBILE BLOG */
+
+/*--- mobile ABOUT ME ---*/							
+.open-button-vita					{ background-color:#eae8db; color:#bab3a9;}
+.open-button-skills					{ background-color:#bab3a9; color:#eae8db;}	
+.open-button-say					{ background-color:#eae8db; color:#bab3a9;}	
+	
+.open-button-vita:hover				{ color:white;}
+.open-button-skills:hover			{ color:white;}	
+.open-button-say:hover				{ color:white;}	
+/*end MOBILE ABOUT ME*/
+				
+
+
+				
+									
+	

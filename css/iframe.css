@@ -1,0 +1,148 @@
+
+body									{ width:100%; height:100%; padding:0px; margin:0px; font-family: 'Open Sans', sans-serif;}
+		
+#wrapper							{ width:1400px; height:818px; overflow:hidden; position:relative; background-color:white; }
+#header								{ width:100%; height:10px; background-color:#2f3134; }
+#footer								{ width:100%; height:0px; background-color:white; }
+			
+#pictures							{ width:600px; float:left; position:relative; overflow:hidden; height:800px; display:inline; }
+#pictures img						{ display:block  }
+		
+#nav								{ width:200px; position:relative; height:800px; background-color:#2f3134; float:left; }
+#nav h1								{ 
+									font-size:28px; 
+									color:#cbcbca;  
+									transform: rotate(90deg);
+									-moz-transform: rotate(90deg);
+									-ms-transform: rotate(90deg);
+									-webkit-transform: rotate(90deg);
+									-o-transform: rotate(90deg); 
+									}
+.nav-info							{ text-align:right; margin-top:30px; margin-right:-10px; float:right;}
+.nav-images							{ text-align:left; margin-top:700px; float:left; margin-left:-30px;}
+							
+#text								{ 
+									width:390px; 
+									float:left; 
+									position:relative; 
+									height:750px; 
+									display:inline; 
+									text-align:center;
+									margin-top:50px;
+									margin-right:10px;
+									}
+											
+.line-366							{ height:20px; position:relative;  }									
+
+#text p								{ font-size:14px; color:#2f3134; margin-right:20px;}
+
+#top-text h4							{ color:#a2a39e; }
+
+#top-text h2							{ color:#2f3134; }
+		
+#bottom-text						{ margin-top:50px; }
+		
+/*======================================================= 
+				L I N E   P O I N T E R
+=======================================================*/
+.deg-130							{
+									margin-top:4.5px;
+									width:13px; 
+									height:1px; 
+									float:left;			
+									position:absolute;
+									transform: rotate(135deg);
+									-moz-transform: rotate(135deg);
+									-ms-transform: rotate(135deg);
+									-webkit-transform: rotate(135deg);
+									-o-transform: rotate(135deg); 
+									}
+					
+.deg-50								{ 
+									margin-top:4.5px;
+									width:13px; 
+									height:1px; 
+									float:left;			
+									position:absolute;
+									transform: rotate(45deg);
+									-moz-transform: rotate(45deg);
+									-ms-transform: rotate(45deg);
+									-webkit-transform: rotate(45deg);
+									-o-transform: rotate(45deg); 
+									}									
+
+.line-1								{
+									margin-top:0px;
+									margin-left:0;
+									height:1px;
+									float:left;
+									position:absolute;
+									}
+
+.line-2								{
+									margin-top:0px;
+									height:1px; 
+									float:left;
+									position:absolute;
+									}
+
+/*--- Line 366px ---*/
+.line-366 .deg-130					{ margin-left:180px; background-color:#9a9b96; }
+			
+.line-366 .deg-50					{ margin-left:171.5px; background-color:#9a9b96; }
+
+.line-366 .line-1					{ width:173.5px; background-color:#9a9b96; }
+
+.line-366 .line-2					{ width:173.5px; margin-left:191px; background-color:#9a9b96; }
+
+
+#pictures .box-wrap					{
+									height:850px;
+									width:100%;
+									}
+											
+#pictures .antiscroll-inner			{ width:623px; height:850px; }		
+											
+#pictures .inner-text				{
+									height:100%;
+									}	
+	
+#text .box-wrap						{
+									height:870px;
+									width:100%; z-index:200;
+									}
+											
+#text .antiscroll-inner				{ width:423px; height:870px; z-index:200;}		
+													
+#text .inner-text					{
+									height:100%; margin-left:20px; margin-right:20px; z-index:200;
+									}
+								
+											
+/*======================================================= 
+		A N T I S C R O L L   S T Y L E S	
+=======================================================*/								
+											
+.antiscroll-wrap 						{ position:absolute; top:0; z-index:1; bottom:0; left:0; width:100%; overflow: hidden; }
+.antiscroll-inner 						{ overflow: scroll; max-width: 130%; height:100%; }
+.antiscroll-inner::-webkit-scrollbar 	{ width: 0; height: 0; }
+.antiscroll-inner::scrollbar 			{ width: 0; height: 0; }
+.antiscroll-scrollbar 					{ position: absolute; z-index: 3;
+										  background: blue;
+										  background: rgba(0, 0, 0, 0.5);
+										  -webkit-border-radius: 7px;
+										  border-radius: 7px;
+										  -webkit-box-shadow: 0 0 1px #fff;
+										  box-shadow: 0 0 1px #fff;
+										  opacity: 0;
+										  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+										  -webkit-transition: linear 300ms opacity;
+										  -moz-transition: linear 300ms opacity;
+										  -o-transition: linear 300ms opacity;
+										}
+.antiscroll-scrollbar-shown 			{ opacity: .3; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30); }
+.antiscroll-scrollbar-horizontal 		{ height: 7px; margin-left: 2px; bottom: 2px; left: 0; }
+.antiscroll-scrollbar-vertical 			{ width: 7px; margin-top: 2px; right: 2px; top: 0; }
+.antiscroll-scrollbar-vertical:active 	{ opacity: .5; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); }
+/*---- END ANTISCROLL ----*/	
+		
