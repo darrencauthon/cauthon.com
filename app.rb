@@ -8,4 +8,16 @@ class App < Sinatra::Base
     end
   end
 
+  ['/mobil', '/mobil.html'].each do |url|
+    get url do
+      erb :mobil
+    end
+  end
+
+  ['/ipad', '/ipad.html'].each do |url|
+    get url do
+      erb :ipad
+    end
+  end
+
 end
