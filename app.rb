@@ -11,22 +11,13 @@ class App < Sinatra::Base
     end
   end
 
+  before do
+    @mode = env['mobvious.device_type'].to_s
+  end
+
   ['/', '/index.html'].each do |url|
     get url do
       erb :index
     end
   end
-
-  ['/mobil', '/mobil.html'].each do |url|
-    get url do
-      erb :mobil
-    end
-  end
-
-  ['/ipad', '/ipad.html'].each do |url|
-    get url do
-      erb :ipad
-    end
-  end
-
 end

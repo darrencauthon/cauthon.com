@@ -1,5 +1,5 @@
 	<!DOCTYPE html>
 <html>
-  <%= erb :head_pc %>
+  <%= erb "head_#{@mode}".to_sym %>
   <%= erb :body %>
 </html>	
