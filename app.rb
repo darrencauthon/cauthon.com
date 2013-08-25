@@ -4,7 +4,7 @@ class App < Sinatra::Base
 
   helpers do
     def appropriate_view_for name
-      if request.env['X_MOBILE_DEVICE'] or request.query_string["mobile"]
+      if env['mobvious.device_type'] == :mobile
         name = "#{name}_mobile"
       end
       name.to_sym

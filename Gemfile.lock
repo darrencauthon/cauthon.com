@@ -3,6 +3,10 @@ GEM
   specs:
     daemons (1.1.9)
     eventmachine (1.0.3)
+    mobileesp_converted (0.2.2)
+    mobvious (0.3.2)
+      mobileesp_converted (~> 0.2.0)
+      rack (>= 1.1.0)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -20,5 +24,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  mobvious
   sinatra
   thin
