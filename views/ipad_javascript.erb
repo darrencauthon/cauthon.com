@@ -1,0 +1,37 @@
+<script>
+        if((navigator.userAgent.match(/iPad/i))) 			{  
+          
+          
+          var scriptElem = document.createElement('script');
+            scriptElem.type = 'text/javascript';
+            scriptElem.src = 'scripts/hoverAnimationsIpad.js';
+
+          
+          var head = document.getElementsByTagName('head')[0];
+          if( head ) head.appendChild( scriptElem );
+
+          //----------------------------------------------------
+
+          var scriptElement = document.createElement( "script" );
+          scriptElement.setAttribute( "src", "test.js" );
+          document.body.appendChild( scriptElement );
+          
+          
+          var cssLocation = "css/style-ipad.css";
+          function getCss(){
+            // CSS für IEs nachladen
+            if(document.createStyleSheet) document.createStyleSheet(cssLocation);
+            // CSS für Mozilla, Netscape, Opera nachladen
+            else{
+            var objStyle = document.createElement("style");
+            var objText = document.createTextNode("@import url("+cssLocation+") screen;");
+            objStyle.appendChild(objText);
+            document.getElementsByTagName("head")[0].appendChild(objStyle);
+            }
+          }
+           
+          window.onload=getCss;
+    } 
+
+
+</script>
