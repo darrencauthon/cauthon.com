@@ -23,7 +23,10 @@ class App < Sinatra::Base
                 linked_in:   'http://www.linkedin.com/in/darrencauthon',
                 google_plus: 'https://plus.google.com/101398632683411111544',
                 facebook:    'http://www.facebook.com/darrencauthon',
-                twitter:     'http://www.twitter.com/darrencauthon'
+                twitter:     'http://www.twitter.com/darrencauthon',
+                big_images:  ['https://s3.amazonaws.com/cauthondotcom/image00.jpg',
+                              'https://s3.amazonaws.com/cauthondotcom/automoq.png']
+
 
               }
       @about_me = {

@@ -6,9 +6,7 @@
   <div id="content-left">
     <div class="tiles">
       <div class="live-tile" id="eins" data-mode="carousel" data-delay="4000" data-direction="horizontal">
-        <div><img src="images/gallery/thumb2.jpg" alt="" ></div>
-        <div><img src="images/gallery/thumb7.jpg" alt="" ></div>
-        <div><img src="images/gallery/thumb13.jpg" alt="" ></div>
+        <div><img src="https://s3.amazonaws.com/cauthondotcom/image00.jpg" alt="" ></div>
       </div>
     </div>
     <div class="tiles" >
@@ -43,9 +41,9 @@
     </div>
     <div class="tiles">
       <div class="live-tile" id="drei" data-mode="carousel" data-delay="4000" data-direction="horizontal">
-        <div><img src="images/gallery/thumb14.jpg" alt=""></div>
-        <div><img src="images/gallery/thumb9.jpg" alt=""></div>
-        <div><img src="images/gallery/thumb1.jpg" alt=""></div>
+        <% @home[:big_images].each do |image| %>
+          <div><img src="<%= image %>" alt="" style="width:400;height:400" ></div>
+        <% end %>
       </div>
     </div>
     <div class="tiles">
@@ -68,9 +66,10 @@
   <div id="content-right">
     <div class="tiles" >
       <div class="live-tile" id="sechs" data-mode="carousel"  data-delay="4000" data-direction="horizontal" >
-        <div><img src="images/gallery/thumb1.jpg" alt=""></div>
-        <div><img src="images/gallery/thumb14.jpg" alt=""></div>
-        <div><img src="images/gallery/thumb9.jpg" alt=""></div>
+        <% @home[:big_images] << @home[:big_images].shift %>
+        <% @home[:big_images].each do |image| %>
+          <div><img src="<%= image %>" alt="" ></div>
+        <% end %>
       </div>
     </div>
     <div class="tiles">
