@@ -1,12 +1,12 @@
 <body>	
   <div id="bWin"></div>
   <div id="wrapper">
-    <%= erb :main_navi %>
+    <%= erb appropriate_view_for(:main_navi) %>
     <section id="content">
-      <%= erb :home %>
-      <%= erb :about_me %>
-      <%= erb :portfolio %>
-      <%= erb :blog %>
+      <%= erb appropriate_view_for(:home) %>
+      <%= erb appropriate_view_for(:about_me) %>
+      <%= erb appropriate_view_for(:portfolio) %>
+      <%= erb appropriate_view_for(:blog) %>
     </section> 
   </div>
   <%= erb :ipad_javascript %>
