@@ -17,8 +17,12 @@ class App < Sinatra::Base
 
   ['/', '/index.html'].each do |url|
     get url do
+      @home = {
+                name: 'Darren Cauthon',
+                title: 'Developer'
+              }
       @about_me = {
-                    name: 'Darren',
+                    name: 'Darren Cauthon',
                     email: 'darren@cauthon.com',
                     phone: '913-940-5373'
                   }
