@@ -257,7 +257,7 @@
         <div class="deg-50"></div>
         <div class="line-2"></div>
       </div>
-      <h1><a href="mailto:darren@cauthon.com" >DARREN@CAUTHON.COM</a></h1>
+      <h1><a href="mailto:<% @about_me[:email] %>" ><%= @about_me[:email].upcase %></a></h1>
       <div id="contact-footer">
         <i class="icon-phone icon-2x" ></i>
         <div class="line-200" >
@@ -266,7 +266,7 @@
           <div class="deg-50"></div>
           <div class="line-2"></div>
         </div>
-        <h1>+01 1234-567890</h1>
+        <h1><%= @about_me[:phone] %></h1>
       </div>
     </div>	<!-- end Contact -->
     

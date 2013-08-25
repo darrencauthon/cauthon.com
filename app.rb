@@ -17,6 +17,11 @@ class App < Sinatra::Base
 
   ['/', '/index.html'].each do |url|
     get url do
+      @about_me = {
+                    name: 'Darren',
+                    email: 'darren@cauthon.com',
+                    phone: '913-940-5373'
+                  }
       erb :index
     end
   end
