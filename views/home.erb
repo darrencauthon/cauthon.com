@@ -6,7 +6,9 @@
   <div id="content-left">
     <div class="tiles">
       <div class="live-tile" id="eins" data-mode="carousel" data-delay="4000" data-direction="horizontal">
-        <div><img src="https://s3.amazonaws.com/cauthondotcom/image00.jpg" alt="" ></div>
+        <% @home[:small_images].each do |image| %>
+          <div><img src="<%= image %>" alt="" ></div>
+        <% end %>
       </div>
     </div>
     <div class="tiles" >
@@ -92,7 +94,9 @@
             <i class="icon-css3 icon-1x" ></i>
           </div>
         </div>
-        <img src="images/gallery/thumb15.jpg" alt="">
+        <% @home[:small_images].each do |image| %>
+          <img src="<%= image %>" alt="" >
+        <% end %>
       </div>
     </div>
   </div>	<!--end content-right-->
