@@ -13,10 +13,9 @@
     </div>
     <div class="tiles" >
       <div class="live-tile" id="zwei" data-mode="carousel"  data-delay="4000" data-direction="vertical" >
-        <div class="navi-people"><p>PEOPLE</p></div>
-        <div class="navi-fashion"><p>FASHION</p></div>
-        <div class="navi-art"><p>ART</p></div>
-        <div class="navi-design"><p>DESIGN</p></div>
+        <% @home[:big_words].each_with_index do |word, index| %>
+          <div class="navi-<%= @word_styles[index] %>"><p><%= word.upcase %></p></div>
+        <% end %>
       </div>
     </div>	
     <div id="vcard">
@@ -50,18 +49,20 @@
     </div>
     <div class="tiles">
       <div class="live-tile" id="vier" data-mode="carousel"  data-delay="4000" data-direction="vertical" >
-        <div class="navi-fashion"><p>FASHION</p></div>
-        <div class="navi-art"><p>ART</p></div>
-        <div class="navi-design"><p>DESIGN</p></div>
-        <div class="navi-people"><p>PEOPLE</p></div>
+        <% @home[:big_words] << @home[:big_words].shift %>
+        <% @word_styles << @word_styles.shift %>
+        <% @home[:big_words].each_with_index do |word, index| %>
+          <div class="navi-<%= @word_styles[index] %>"><p><%= word.upcase %></p></div>
+        <% end %>
       </div>	
     </div>
     <div class="tiles">
       <div class="live-tile" id="fuenf" data-mode="carousel"  data-delay="4000" data-direction="vertical" >
-          <div class="navi-art"><p>ART</p></div>
-          <div class="navi-design"><p>DESIGN</p></div>
-          <div class="navi-people"><p>PEOPLE</p></div>
-          <div class="navi-design"><p>FASHION</p></div>
+        <% @home[:big_words] << @home[:big_words].shift %>
+        <% @word_styles << @word_styles.shift %>
+        <% @home[:big_words].each_with_index do |word, index| %>
+          <div class="navi-<%= @word_styles[index] %>"><p><%= word.upcase %></p></div>
+        <% end %>
       </div>	
     </div>
   </div>	<!--end content-left-->
@@ -94,9 +95,7 @@
             <i class="icon-css3 icon-1x" ></i>
           </div>
         </div>
-        <% @home[:small_images].each do |image| %>
-          <img src="<%= image %>" alt="" >
-        <% end %>
+        <img src="<%= @home[:small_images].first %>" alt="" >
       </div>
     </div>
   </div>	<!--end content-right-->

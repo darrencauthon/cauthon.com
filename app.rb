@@ -12,6 +12,10 @@ class App < Sinatra::Base
   end
 
   before do
+    @word_styles = ['fashion', 'art', 'design', 'people']
+  end
+
+  before do
     @mode = env['mobvious.device_type'].to_s
   end
 
@@ -24,7 +28,9 @@ class App < Sinatra::Base
                 google_plus:  'https://plus.google.com/101398632683411111544',
                 facebook:     'http://www.facebook.com/darrencauthon',
                 twitter:      'http://www.twitter.com/darrencauthon',
-                small_images: ['https://s3.amazonaws.com/cauthondotcom/family.jpg'],
+                big_words:    ['tdd', 'ruby', 'c#'],
+                small_images: ['https://s3.amazonaws.com/cauthondotcom/family.jpg',
+                               'https://s3.amazonaws.com/cauthondotcom/github.jpg' ],
                 big_images:   ['https://s3.amazonaws.com/cauthondotcom/image00.jpg',
                               'https://s3.amazonaws.com/cauthondotcom/automoq.png']
 
