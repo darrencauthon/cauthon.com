@@ -41,6 +41,36 @@ class App < Sinatra::Base
                     email: 'darren@cauthon.com',
                     phone: '913-940-5373'
                   }
+      @work_experience = [{ 
+                            since: '2013',
+                            position: 'CTO',
+                            company: 'Infinite Fortress',
+                            description: ''
+                          }, 
+                          { 
+                            since: '2012',
+                            position: 'Senior Web Developer',
+                            company: 'Brush Art',
+                            description: ''
+                          },
+                          { 
+                            since: '2004-2011',
+                            position: 'Engineer',
+                            company: 'Digital Evolution Group',
+                            description: ''
+                          },
+                          { 
+                            since: '2001-2004',
+                            position: 'Programmer',
+                            company: 'State of Kansas',
+                            description: ''
+                          }]
+      @education = [{ 
+                       since: '2011',
+                       degree: 'Computer Science',
+                       school: 'Missouri Western State University'
+                     }]
+
       erb :index
     end
   end

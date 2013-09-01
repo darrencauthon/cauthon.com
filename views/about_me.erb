@@ -15,106 +15,36 @@
                 V I T A 
           ===============================-->
           <h1 class="pcblock" >WORK EXPERIENCE</h1>
-          <div class="block">
-            <h5>SINCE 2011</h5>
-            <div class="line-200" >
-              <div class="line-1"></div>
-              <div class="deg-130"></div>
-              <div class="deg-50"></div>
-              <div class="line-2"></div>
+          <% @work_experience.each do |experience| %>
+            <div class="block">
+              <h5><%= experience[:since].upcase %></h5>
+              <div class="line-200" >
+                <div class="line-1"></div>
+                <div class="deg-130"></div>
+                <div class="deg-50"></div>
+                <div class="line-2"></div>
+              </div>
+              <h4><%= experience[:position].upcase %></h4>
+              <h3><%= experience[:company].upcase %></h3>
+              <p><%= experience[:description] %></p>
             </div>
-            <h4>PROGRAMMER</h4>
-            <h3>UPLEDA DESIGN, STOCKHOLM</h3>
-            <p>Developed a creative team to successfully execute design projects for large advertising campaigns. Overview and develop graphical standards, templates and recources.</p>
-          </div>
-          <div class="block">
-            <h5>2008 - 2011</h5>
-            <div class="line-200">
-              <div class="line-1"></div>
-              <div class="deg-130"></div>
-              <div class="deg-50"></div>
-              <div class="line-2"></div>
-            </div>
-            <h4>UI DESIGNER</h4>
-            <h3>FINAL DESIGN, VIENNA</h3>
-            <p>Developed a creative team to successfully execute design projects for large advertising campaigns. Overview and develop graphical standards, templates and recources.</p>
-          </div>
-          <div class="block">
-            <h5>2006 - 2008</h5>
-            <div class="line-200" >
-              <div class="line-1"></div>
-              <div class="deg-130"></div>
-              <div class="deg-50"></div>
-              <div class="line-2"></div>
-            </div>
-            <h4>ART DIRECTOR</h4>
-            <h3>TOGOGO DESIGN, STOCKHOLM</h3>
-            <p>Developed a creative team to successfully execute design projects for large advertising campaigns. Overview and develop graphical standards, templates and recources.</p>
-          </div>
-          
+          <% end %>
           <h1 class="pcblock" >EDUCATION</h1>
-          <div class="block">
-            <h5>SINCE 2011</h5>
-            <div class="line-200">
-              <div class="line-1"></div>
-              <div class="deg-130"></div>
-              <div class="deg-50"></div>
-              <div class="line-2"></div>
+          <% @education.each do |experience| %>
+            <div class="block">
+              <h5><%= experience[:since] %></h5>
+              <div class="line-200" >
+                <div class="line-1"></div>
+                <div class="deg-130"></div>
+                <div class="deg-50"></div>
+                <div class="line-2"></div>
+              </div>
+              <h4><%= experience[:degree].upcase %></h4>
+              <h3><%= experience[:school].upcase %></h3>
             </div>
-            <h4>PROGRAMMER</h4>
-            <h3>UPLEDA DESIGN, STOCKHOLM</h3>
-            <p>Developed a creative team to successfully execute design projects for large advertising campaigns. Overview and develop graphical standards, templates and recources.</p>
-          </div>
-          <div class="block">
-            <h5>2008 - 2011</h5>
-            <div class="line-200">
-              <div class="line-1"></div>
-              <div class="deg-130"></div>
-              <div class="deg-50"></div>
-              <div class="line-2"></div>
-            </div>
-            <h4>UI DESIGNER</h4>
-            <h3>FINAL DESIGN, VIENNA</h3>
-            <p>Developed a creative team to successfully execute design projects for large advertising campaigns. Overview and develop graphical standards, templates and recources.</p>
-          </div>
-          <div class="block">
-            <h5>2006 - 2008</h5>
-            <div class="line-200">
-              <div class="line-1"></div>
-              <div class="deg-130"></div>
-              <div class="deg-50"></div>
-              <div class="line-2"></div>
-            </div>
-            <h4>ART DIRECTOR</h4>
-            <h3>TOGOGO DESIGN, STOCKHOLM</h3>
-            <p>Developed a creative team to successfully execute design projects for large advertising campaigns. Overview and develop graphical standards, templates and recources.</p>
-          </div>
-          
-          <h1 class="pcblock" >TESTIMONIAL</h1>
-          <div class="block-3">
-            <h5>GETTY IMAGES INC.</h5>
-            <div class="line-200" >
-              <div class="line-1"></div>
-              <div class="deg-130"></div>
-              <div class="deg-50"></div>
-              <div class="line-2"></div>
-            </div>
-            <i class="icon-quote-left icon-1x" ></i><span >A lore ipsum of praise and glory.</span><i class="icon-quote-right icon-1x" ></i>
-            <h4>MARC SMITH</h4>
-            <h3>mark.smith@company.com</h3>
-          </div>
-          <div class="block-3">
-            <h5>FOSTERS &amp; PARTNERS</h5>
-            <div class="line-200" >
-              <div class="line-1"></div>
-              <div class="deg-130"></div>
-              <div class="deg-50"></div>
-              <div class="line-2"></div>
-            </div>
-            <i class="icon-quote-left icon-1x" ></i><span >Her imagination and spirit is unmatched.</span><i class="icon-quote-right icon-1x" ></i>
-            <h4>KIMIKO HANSEN</h4>
-            <h3 class="last-h3">kimiko.hansen@company.com</h3>
-          </div>
+          <% end %>
+          <br />
+          <br />
         </div>	<!-- end inner-text -->
       </div> <!-- end antiscroll-inner -->
     </div>	<!-- end antiscroll-wrap -->
