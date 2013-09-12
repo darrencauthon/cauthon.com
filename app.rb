@@ -37,10 +37,12 @@ class App < Sinatra::Base
 
               }
       @about_me = {
-                    name: 'Darren Cauthon',
-                    email: 'darren@cauthon.com',
-                    phone: '913-940-5373'
+                    name:       'Darren Cauthon',
+                    email:      'darren@cauthon.com',
+                    phone:      '913-940-5373',
+                    twitter_id: '378012248632872960'
                   }
+                  
       @work_experience = [{ 
                             since: '2013',
                             position: 'CTO',

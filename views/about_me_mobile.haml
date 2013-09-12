@@ -28,7 +28,8 @@
       .tweet-box
         .box-wrap.antiscroll-wrap
           .antiscroll-inner
-            %a.twitter-timeline{"data-aria-polite" => "assertive", "data-border-color" => "#000", "data-chrome" => "nofooter, noheader transparent", "data-link-color" => "#000", "data-show-replies" => "true", "data-theme" => "dark", "data-tweet-limit" => "6", "data-widget-id" => "344795593878679555", :href => "https://twitter.com/twitterapi"}
+            - raise @about_me.inspect
+            %a.twitter-timeline{"data-aria-polite" => "assertive", "data-border-color" => "#000", "data-chrome" => "nofooter, noheader transparent", "data-link-color" => "#000", "data-show-replies" => "true", "data-theme" => "dark", "data-tweet-limit" => "6", "data-widget-id" => @about_me[:twitter_id], :href => "https://twitter.com/twitterapi"}
               Tweets by @twitterapi
     / end Feed MOBIL
   / Mobil Vita
@@ -154,7 +155,7 @@
             .deg-50
             .line-2
           %h1
-            %a{:href => "mailto:darren@cauthon.com"} DARREN@CAUTHON.COM
+            %a{:href => "mailto:#{@about_me[:email]}"}= @about_me[:email]
         .contact-bottom
           %i.icon-phone.icon-2x
           .line-366
