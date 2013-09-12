@@ -1,0 +1,170 @@
+/
+  \=========================================================================================================
+  A B O U T   M E
+  \==========================================================================================================
+#about-me
+  #about-nav
+    / Mobil Header
+    %header.about-header
+      %h5 ABOUT ME
+      .line-366
+        .line-1
+        .deg-130
+        .deg-50
+        .line-2
+    / end Mobil Header
+    .open-button-vita VITA
+    .open-button-skills SKILLS
+    .open-button-say SAY HI!
+    / FEED MOBIL
+    / Please insert your Twitter ID in Line 311 " data-widget-id='your ID' "
+    #feed
+      %i.icon-twitter.icon-2x
+      .line-366
+        .line-1
+        .deg-130
+        .deg-50
+        .line-2
+      .tweet-box
+        .box-wrap.antiscroll-wrap
+          .antiscroll-inner
+            %a.twitter-timeline{"data-aria-polite" => "assertive", "data-border-color" => "#000", "data-chrome" => "nofooter, noheader transparent", "data-link-color" => "#000", "data-show-replies" => "true", "data-theme" => "dark", "data-tweet-limit" => "6", "data-widget-id" => "344795593878679555", :href => "https://twitter.com/twitterapi"}
+              Tweets by @twitterapi
+    / end Feed MOBIL
+  / Mobil Vita
+  #vita
+    #vita-inner
+      .box-wrap.antiscroll-wrap
+        .antiscroll-inner
+          .inner-text
+            / Mobil Header
+            %header.header
+              %h5 VITA
+              .line-366
+                .line-1
+                .deg-130
+                .deg-50
+                .line-2
+            / end Mobil Header
+            %h1 WORK EXPERIENCE
+            - @work_experience.each do |experience|
+              .block
+                %h5= experience[:since].upcase
+                .line-366
+                  .line-1
+                  .deg-130
+                  .deg-50
+                  .line-2
+                %h4= experience[:position].upcase
+                %h3= experience[:company].upcase
+                %p= experience[:description]
+            %h1 EDUCATION
+            - @education.each do |experience|
+              .block
+                %h5= experience[:since]
+                .line-366
+                  .line-1
+                  .deg-130
+                  .deg-50
+                  .line-2
+                %h4= experience[:degree].upcase
+                %h3= experience[:school].upcase
+            .top-button BACK
+          / Mobil Vita
+        / end Antiscroll Inner
+      / end Box-Wrap
+    / end Mobil Vita Inner
+  / end Mobil Vita
+  / Mobil Skills
+  #skills
+    .skills-inner
+      / Mobil Header
+      %header.header
+        %h5 SKILLS
+        .line-366
+          .line-1
+          .deg-130
+          .deg-50
+          .line-2
+      / end Mobil Header
+      .container
+        .inner-container
+          .chart-dark
+            .percentage-black{"data-percent" => "100"}
+              %span> 100
+              \%
+            .label PHOTOSOP
+          .chart-light
+            .percentage-white{"data-percent" => "100"}
+              %span> 100
+              \%
+            .label HTML5/CSS3
+          .chart-light
+            .percentage-white{"data-percent" => "90"}
+              %span> 90
+              \%
+            .label INDESIGN
+          .chart-dark
+            .percentage-black{"data-percent" => "90"}
+              %span> 90
+              \%
+            .label JAVASCRIPT
+          .chart-dark
+            .percentage-black{"data-percent" => "80"}
+              %span> 80
+              \%
+            .label PHP
+          .chart-light
+            .percentage-white{"data-percent" => "80"}
+              %span> 80
+              \%
+            .label ILLUSTRATOR
+          .chart-light
+            .percentage-white{"data-percent" => "60"}
+              %span> 60
+              \%
+            .label WORDPRESS
+          .chart-dark
+            .percentage-black{"data-percent" => "70"}
+              %span> 70
+              \%
+            .label ANALOG
+      / end container
+      .top-button BACK
+    / end mobil-skills-inner
+  / end MOBIL SKILLS
+  / MOBIL CONTACT
+  #say
+    .say-inner
+      / Mobil Header
+      %header.header
+        %h5 CONTACT
+        .line-366
+          .line-1
+          .deg-130
+          .deg-50
+          .line-2
+      / end Mobil Header
+      #contact-mobil
+        .contact-top
+          %i.icon-envelope-alt.icon-2x
+          .line-366
+            .line-1
+            .deg-130
+            .deg-50
+            .line-2
+          %h1
+            %a{:href => "mailto:darren@cauthon.com"} DARREN@CAUTHON.COM
+        .contact-bottom
+          %i.icon-phone.icon-2x
+          .line-366
+            .line-1
+            .deg-130
+            .deg-50
+            .line-2
+          %h1 +01 1234-567890
+      / end Contact
+      .top-button BACK
+    / end mobil-say-inner
+  / end MOBIL CONTACT
+/ E N D   M O B I L   A B O U T   M E

@@ -1,0 +1,161 @@
+#about-me
+  %h2 ABOUT-ME
+  #about-left
+    .box-wrap.antiscroll-wrap
+      .antiscroll-inner
+        .inner-text
+          %h1.pcblock WORK EXPERIENCE
+          - @work_experience.each do |experience|
+            .block
+              %h5= experience[:since].upcase
+              .line-200
+                .line-1
+                .deg-130
+                .deg-50
+                .line-2
+              %h4= experience[:position].upcase
+              %h3= experience[:company].upcase
+              %p= experience[:description]
+          %h1.pcblock EDUCATION
+          - @education.each do |experience|
+            .block
+              %h5= experience[:since]
+              .line-200
+                .line-1
+                .deg-130
+                .deg-50
+                .line-2
+              %h4= experience[:degree].upcase
+              %h3= experience[:school].upcase
+          %br/
+          %br/
+        / end inner-text
+      / end antiscroll-inner
+    / end antiscroll-wrap
+  / end ABOUT LEFT
+  / Middle of About me
+  #about-middle
+    .box-1
+      .navi-left
+        .rotate-90-4 VITA
+        .rotate-90-3 SKILLS
+    .box-2
+    .box-1
+      .navi-right
+        .rotate-90-3 SAY HI!
+    .box-2
+      .navi-right
+        .rotate-90-2 FEED
+  / end About Middle
+  / right Side of About Me
+  #about-right
+    /
+      \==============================
+      S K I L L S
+      \===============================
+    .container
+      .tiles
+        .live-tile{"data-delay" => "10000", "data-direction" => "vertical", "data-mode" => "flip"}
+          .chart-dark
+            .percentage-black{"data-percent" => "100"}
+              %span PHOTOSOP
+          .chart-light
+            .percentage-white{"data-percent" => "100"}
+              %span HTML5/CSS3
+      .tiles
+        .live-tile{"data-delay" => "10000", "data-direction" => "horizontal", "data-mode" => "flip"}
+          .chart-light
+            .percentage-white{"data-percent" => "80"}
+              %span ILLUSTRATOR
+          .chart-dark
+            .percentage-black{"data-percent" => "90"}
+              %span JAVASCRIPT
+      .tiles
+        .live-tile{"data-delay" => "10000", "data-direction" => "horizontal", "data-mode" => "flip"}
+          .chart-light
+            .percentage-white{"data-percent" => "90"}
+              %span INDESIGN
+          .chart-dark
+            .percentage-black{"data-percent" => "80"}
+              %span PHP
+      .tiles
+        .live-tile{"data-delay" => "10000", "data-direction" => "vertical", "data-mode" => "flip"}
+          .chart-dark
+            .percentage-black{"data-percent" => "70"}
+              %span ANALOG
+          .chart-light
+            .percentage-white{"data-percent" => "60"}
+              %span WORDPRESS
+    / end skills
+    /
+      \==============================
+      S K I L L S   IE8
+      \===============================
+    .container-ie8
+      .tiles
+        .live-tile{"data-delay" => "10000", "data-direction" => "vertical", "data-mode" => "flip"}
+          .chart-dark-ie8
+            %span.percent 100%
+            .label PHOTOSOP
+          .chart-light-ie8
+            %span.percent 100%
+            .label HTML5/CSS3
+      .tiles
+        .live-tile{"data-delay" => "10000", "data-direction" => "horizontal", "data-mode" => "flip"}
+          .chart-light-ie8
+            %span.percent 90%
+            .label ILLUSTRATOR
+          .chart-dark-ie8
+            %span.percent 100%
+            .label JAVASCRIPT
+      .tiles
+        .live-tile{"data-delay" => "10000", "data-direction" => "horizontal", "data-mode" => "flip"}
+          .chart-light-ie8
+            %span.percent 50%
+            .label INDESIGN
+          .chart-dark-ie8
+            %span.percent 100%
+            .label PHP
+      .tiles
+        .live-tile{"data-delay" => "10000", "data-direction" => "vertical", "data-mode" => "flip"}
+          .chart-dark-ie8
+            %span.percent 90%
+            .label ANALOG
+          .chart-light-ie8
+            %span.percent 80%
+            .label WORDPRESS
+    / end skills IE 8
+    /
+      \==============================
+      C O N T A C T
+      \===============================
+    #contact
+      %i.icon-envelope-alt.icon-2x
+      .line-200
+        .line-1
+        .deg-130
+        .deg-50
+        .line-2
+      %h1
+        %a{:href => "mailto:<haml:silent> @about_me[:email] </haml:silent>"}= @about_me[:email].upcase
+      #contact-footer
+        %i.icon-phone.icon-2x
+        .line-200
+          .line-1
+          .deg-130
+          .deg-50
+          .line-2
+        %h1= @about_me[:phone]
+    / Please insert your Twitter ID in Line 698 " data-widget-id='your ID' "
+    #feed
+      %i.icon-twitter.icon-2x
+      .line-200
+        .line-1
+        .deg-130
+        .deg-50
+        .line-2
+      .tweet-box
+        .box-wrap.antiscroll-wrap
+          .antiscroll-inner
+            %a.twitter-timeline{"data-aria-polite" => "assertive", "data-border-color" => "#000", "data-chrome" => "nofooter, noheader transparent", "data-link-color" => "#000", "data-show-replies" => "true", "data-theme" => "dark", "data-tweet-limit" => "6", "data-widget-id" => "344795593878679555", :href => "https://twitter.com/twitterapi"}
+              Tweets by @twitterapi

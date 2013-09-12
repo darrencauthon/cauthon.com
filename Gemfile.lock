@@ -3,6 +3,8 @@ GEM
   specs:
     daemons (1.1.9)
     eventmachine (1.0.3)
+    haml (4.0.3)
+      tilt
     mobileesp_converted (0.2.2)
     mobvious (0.3.2)
       mobileesp_converted (~> 0.2.0)
@@ -24,6 +26,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   mobvious
   sinatra
   thin
