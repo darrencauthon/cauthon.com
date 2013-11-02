@@ -69,7 +69,7 @@ class App < Sinatra::Base
                             description: ''
                           }]
       @education = [{ 
-                       since: '2011',
+                       since: '2001',
                        degree: 'Computer Science',
                        school: 'Missouri Western State University'
                      }]
